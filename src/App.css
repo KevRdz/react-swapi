@@ -11,17 +11,18 @@
   margin: 20px;
   padding: 20px;
   /* width: 100px; */
-  flex-wrap: wrap;
-  flex: auto;
-  
+  /* flex-wrap: wrap; */
+  /* flex: auto; */
   font-size: large;
   font-weight: bold;
-  
+  /* float: left; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 header{
   background-color: rgb(135, 135, 188);
-  
 }
 
 a{
@@ -34,7 +35,7 @@ a{
   background-color: rgb(71, 115, 71);
   height: 250px;
   /* width: 550px; */
-
+  
 }
 
 .each-div{
