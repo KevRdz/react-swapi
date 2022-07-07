@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import { useLocation } from 'react-router-dom'
 import { getDetails } from './services/sw-api'
+import { Link } from 'react-router-dom'
 
 const StarshipDetails = () => {
   const [starshipDetails, setStarshipDetails] = useState([])
@@ -14,11 +15,12 @@ const StarshipDetails = () => {
   }, [location.state.starshipTitle.url])
   return (
     <>
-      <div>
+      <div className='details'>
         <h3>Starship Details</h3>
         <>
-          <div>Name: {starshipDetails.name}</div>
-          <div>Model: {starshipDetails.model}</div>
+          <div className='each-div'>Name: {starshipDetails.name}</div>
+          <div className='each-div'>Model: {starshipDetails.model}</div>
+          <Link to="/">Return</Link>
         </>
       </div>
     </>
